@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleek Minimal Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="welcome-screen">
+        <div class="welcome-logo">CALC<span>UI</span></div>
+        <div class="loader">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <header>
+       <h1 class="app-heading">CALCUI</h1>
+    </header>
+
+    <div class="calc-container">
+        
+        <input class="calc-display" id="display" readonly>
+        
+        <div class="calc-grid">
+            <button class="btn btn-function" onclick="ClearDisplay()">AC</button>
+            <button class="btn btn-function" onclick="WhatToDisplay('%')">%</button>
+            <button class="btn btn-function" onclick="WhatToDisplay('/')">÷</button>
+            <button class="btn btn-operator" ></button>
+
+            <button class="btn" onclick="WhatToDisplay('7')">7</button>
+            <button class="btn" onclick="WhatToDisplay('8')">8</button>
+            <button class="btn" onclick="WhatToDisplay('9')">9</button>
+            <button class="btn btn-operator" onclick="WhatToDisplay('*')">×</button>
+
+            <button class="btn" onclick="WhatToDisplay('4')">4</button>
+            <button class="btn" onclick="WhatToDisplay('5')">5</button>
+            <button class="btn" onclick="WhatToDisplay('6')">6</button>
+            <button class="btn btn-operator" onclick="WhatToDisplay('-')">−</button>
+
+            <button class="btn" onclick="WhatToDisplay('1')">1</button>
+            <button class="btn" onclick="WhatToDisplay('2')">2</button>
+            <button class="btn" onclick="WhatToDisplay('3')">3</button>
+            <button class="btn btn-operator" onclick="WhatToDisplay('+')">+</button>
+
+            <button class="btn" onclick="WhatToDisplay('0')">0</button>
+            <button class="btn" onclick="WhatToDisplay('.')">.</button>
+            <button class="btn btn-equals" onclick="Calculate()">=</button>
+        </div>
+    </div>
+
+    <footer>
+        Designed & Built by <span>Saim Mujahid.</span>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
