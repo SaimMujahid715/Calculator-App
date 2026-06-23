@@ -25,3 +25,25 @@ function Calculate() {
         calculated = true;
     }
 }
+
+document.addEventListener("keydown", (event) => {
+    const key = event.key;
+
+    // Numbers and operators
+    if (
+        "0123456789+-*/.".includes(key)
+    ) {
+        WhatToDisplay(key);
+    }
+
+    if (key === "Enter") {
+        Calculate()
+    }
+
+    if(key === "Backspace") {
+        display.value = display.value.slice(0 , -1)
+    }
+    
+    if(key === "Escape") {
+        ClearDisplay()
+    }})
